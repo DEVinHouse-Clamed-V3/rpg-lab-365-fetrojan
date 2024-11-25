@@ -1,3 +1,3 @@
-let a: number = 2
+import Arma from "./classes/Arma";
 
-console.log(a)
+const espada = new Arma('Espada Longa', 'Uma espada longa e afiada', 2000)
