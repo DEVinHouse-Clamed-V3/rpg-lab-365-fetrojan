@@ -9,6 +9,7 @@ export default class Boss extends Inimigo {
             console.log("Ataque falhou")
         } else {
             personagem.receberDano(this.causarDano()*2)
+            console.log('Boss atacou', this.causarDano()*2)
         }
     }
 

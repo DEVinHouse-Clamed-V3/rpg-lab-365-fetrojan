@@ -34,6 +34,10 @@ export default class Personagem {
         console.log(this.arma.getNome() + ' Equipada')
     }
 
+    atacar(inimigo: Personagem) {
+        inimigo.receberDano(this.causarDano())
+    }
+
     protected causarDano(){
         if(this.arma === null) {
             return this.forca
